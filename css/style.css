@@ -48,8 +48,14 @@ header nav {
   position: fixed;
   padding: 10px 0;
   width: 100%;
-  background: #00000082;
   z-index: 999;
+  margin: 10px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+header nav.aw-nav-fixed {
+  margin: 0;
+  background: #00000082;
 }
 header nav ul.aw-navigation {
   margin: 0;
