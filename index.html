@@ -33,10 +33,10 @@
     </header>
 
     <!-- Main content -->
-    <>
+    <section>
 
       <!--About us-->
-      <section id="aw-about" class="aw-container aw-section ">
+      <section id="aw-about" class="aw-container aw-section">
         <h3>About us</h3>
         <div class="aw-column">
           <i class="icon-trophy"></i>
@@ -78,47 +78,68 @@
       <!--Testimonials-->
       <section id="aw-testimonials" class="aw-section">
         <h3>Awesome testimonials</h3>
-        <ul class="aw-testimonials">
-          <li>
-            <div class="aw-user-data">
-              <img src="./img/users/user-1.jpg" alt="">
-              <span>Quynh Trang</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Ut laoreet dictum orci, in molestie nunc iaculis eget. Nullam eget facilisis libero. 
-              Pellentesque finibus urna nec mi rutrum sagittis. Vestibulum tristique massa vitae metus molestie eleifend. 
-              Pellentesque faucibus quam in mi venenatis rhoncus. Donec accumsan urna nulla, in pellentesque eros feugiat nec.
-            </p>
-          </li>
-          <li>
-            <div class="aw-user-data">
-              <img src="./img/users/user-2.jpg" alt="">
-              <span>Lee Dung</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Ut laoreet dictum orci, in molestie nunc iaculis eget. Nullam eget facilisis libero. 
-              Pellentesque finibus urna nec mi rutrum sagittis. Vestibulum tristique massa vitae metus molestie eleifend. 
-              Pellentesque faucibus quam in mi venenatis rhoncus. Donec accumsan urna nulla, in pellentesque eros feugiat nec.
-            </p>
-          </li>
-          <li>
-            <div class="aw-user-data">
-              <img src="./img/users/user-3.jpg" alt="">
-              <span>Bang Thanh</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Ut laoreet dictum orci, in molestie nunc iaculis eget. Nullam eget facilisis libero. 
-              Pellentesque finibus urna nec mi rutrum sagittis. Vestibulum tristique massa vitae metus molestie eleifend. 
-              Pellentesque faucibus quam in mi venenatis rhoncus. Donec accumsan urna nulla, in pellentesque eros feugiat nec.
-            </p>
-          </li>
-        </ul>
+        <div class="aw-testimonials">
+          <ul >
+            <li>
+              <div class="aw-user-data">
+                <img src="./img/users/user-1.jpg" alt="">
+                <span>Quynh Trang</span>
+              </div>
+              <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut laoreet dictum orci, in molestie nunc iaculis eget. Nullam eget facilisis libero. 
+                Pellentesque finibus urna nec mi rutrum sagittis. Vestibulum tristique massa vitae metus molestie eleifend. "
+              </p>
+            </li>
+            <li>
+              <div class="aw-user-data">
+                <img src="./img/users/user-2.jpg" alt="">
+                <span>Lee Dung</span>
+              </div>
+              <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut laoreet dictum orci, in molestie nunc iaculis eget. Nullam eget facilisis libero. 
+                Pellentesque finibus urna nec mi rutrum sagittis. Vestibulum tristique massa vitae metus molestie eleifend. "
+              </p>
+            </li>
+            <li>
+              <div class="aw-user-data">
+                <img src="./img/users/user-3.jpg" alt="">
+                <span>Bang Thanh</span>
+              </div>
+              <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Ut laoreet dictum orci, in molestie nunc iaculis eget. Nullam eget facilisis libero. 
+                Pellentesque finibus urna nec mi rutrum sagittis. Vestibulum tristique massa vitae metus molestie eleifend. "
+              </p>
+            </li>
+          </ul>
+          <i id="aw-testimonials-prev" class="aw-arrow aw-arrow-left"></i>
+          <i id="aw-testimonials-next" class="aw-arrow aw-arrow-right"></i>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="aw-contact" class="aw-section">
+        <h3>Contact us</h3>
+        <form action="" method="">
+          <input type="text" placeholder="Name" name="name">
+          <input type="text" placeholder="Surname" name="surname">
+          <input type="text" placeholder="Email" name="email">
+          <textarea placeholder="Your message"></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </section>
     </section>
 
     <!-- Website Footer -->
-    <footer>
-
+    <footer >
+      <div class="aw-container aw-align-center">
+        <a class="aw-logo aw-align-center" href="#">LD!</a>
+        <ul class="aw-social-icons">
+          <li><a href=""><i class="icon-facebook2"></i></a></li>
+          <li><a href=""><i class="icon-tumblr"></i></a></li>
+          <li><a href=""><i class="icon-skype"></i></a></li>
+          <li><a href=""><i class="icon-reddit"></i></a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
