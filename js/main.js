@@ -23,7 +23,20 @@
   }
 
   const scrollToSection = sectionId => {
-    console.log(sectionId)
+    let sectionPosition, sectionOffset;
+    const navigationHeight = document.querySelector("header nav").offsetHeight;
+    const pageWidth = window.innerWidth;
+    if (sectionId !== "#") {
+      sectionOffset = document.querySelector(sectionId).offsetTop; // returns the top position (in pixels) relative to the top of the offsetParent element.
+      sectionPosition = pageWidth > mobileWidth ? sectionOffset - navigationHeight : sectionOffset;
+    } else {
+      sectionPosition = 0;
+    }
+    window.scrollTo({
+      'behavior': 'smooth', //Allows a smooth animated "scroll effect"
+      'left': 0,
+      'top': sectionPosition
+    })
   }
 
   window.addEventListener("scroll", () => { // event fires when the document view or an element has been scrolled.
