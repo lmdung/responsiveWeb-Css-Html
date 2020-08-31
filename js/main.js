@@ -38,10 +38,26 @@
       'top': sectionPosition
     })
   }
+  const onTestimonialChange = () => {
+    let fistChild, lastChild;
+    let prevArrow = document.querySelector("#aw-testimonials-prev");
+    let nextArrow = document.querySelector("#aw-testimonials-next");
+    const testimonials = document.querySelector(".aw-testimonials ul");
+    document.addEventListener('click', () => {
+      if (event.target === prevArrow) {
+        lastChild = testimonials.lastElementChild; //  returns the last child element of the specified element
+        testimonials.insertAdjacentElement("afterbegin", lastChild); // method inserts a the specified element into a specified position;
+      } else if (event.target === nextArrow) {
+        fistChild = testimonials.firstElementChild;
+        testimonials.insertAdjacentElement("beforeend", fistChild);
+      }
+    })
+  }
 
   window.addEventListener("scroll", () => { // event fires when the document view or an element has been scrolled.
     addMenuBackground()
   });
 
   onNavItemClick();
+  onTestimonialChange();
 })();
