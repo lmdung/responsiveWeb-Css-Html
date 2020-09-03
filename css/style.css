@@ -352,6 +352,7 @@ footer .aw-social-icons li a {
 footer .aw-social-icons li a:hover {
   opacity: .7;
 }
+
 /* animation */
 .aw-pulsate {
   -webkit-animation: pulsate 3s ease-in-out;
@@ -368,4 +369,28 @@ footer .aw-social-icons li a:hover {
   100% {
     opacity: .3;
   }
+}
+
+/* Responsive */
+
+@media all and (max-width: 1020px) {
+  .aw-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+@media all and (max-width: 820px ) {
+  h1 {
+    font-size: 55px;
+  }
+  .aw-header-text .aw-arrow,
+  .aw-testimonials .aw-arrow {
+    padding: 15px;
+  }
+  .aw-testimonials .aw-arrow.aw-arrow-left {
+    right: 100%;
+  }
+  .aw-testimonials .aw-arrow.aw-arrow-right {
+    left: 100%;
+  }
+}
 }
