@@ -397,7 +397,7 @@ footer .aw-social-icons li a:hover {
     left: 100%;
   }
   }
-@media all and (max-width: 680px ) {
+@media all and (max-width: 680px) {
   header nav {
     position: absolute;
   }
@@ -439,5 +439,36 @@ footer .aw-social-icons li a:hover {
     display: block;
     color: #fff;
     font-size: 25px;
+  }
+}
+@media all and (max-width: 600px) {
+  .aw-logo {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  h1, h3 {
+    font-size: 35px;
+  }
+  .aw-header-text .aw-arrow, 
+  .aw-testimonials .aw-arrow {
+    padding: 10px;
+  }
+  #aw-about .aw-column {
+    width: 100%;
+  }
+  #aw-gallery li {
+    width: 33.33%; 
+  }
+  .aw-testimonials ul li > p {
+    font-size: 17px;
+  }
+  .aw-testimonials {
+    max-width: 80%;
+  }
+  #aw-contact form input:not([type="submit"]), 
+  #aw-contact form textarea {
+    width: 89%;
+    padding: 15px;
   }
 }
