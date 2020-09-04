@@ -10,6 +10,25 @@
     }
   }
 
+  const reorderResponsiveMenu = () => {
+    const pageWidth = window.innerWidth;
+    const navigation = document.querySelector("header nav .aw-navigation");
+    const navigationMobile = document.querySelector("body > .aw-navigation");
+    const navContainer = document.querySelector("header nav .aw-container");
+    if (pageWidth <= mobileWidth && navigation) {
+      document.body.insertAdjacentElement("afterbegin", navigation)
+    } else if (pageWidth > mobileWidth && navigationMobile) {
+      navContainer.insertAdjacentElement("beforeend", navigationMobile)
+    }
+  }
+  const mobileMobileToggle = () => {
+    const menuToggle = document.querySelector(".aw-nav-toggle");
+    menuToggle.addEventListener("click", () => {
+      const mobileNavigation = document.querySelector("body > .aw-navigation");
+      mobileNavigation.classList.toggle("aw-navigation-open") //Toggles between a class name for an element
+    })
+  }
+
   const onNavItemClick = () => {
     const navItemList = document.querySelectorAll(".aw-section-link"); // all element with class aw-section-link
     const navItems = [...navItemList];
@@ -83,8 +102,13 @@
   window.addEventListener("scroll", () => { // event fires when the document view or an element has been scrolled.
     addMenuBackground()
   });
+  window.addEventListener("resize", () => { // event fires when the document view or an element has been scrolled.
+    reorderResponsiveMenu();
+  });
 
   onNavItemClick();
   onTestimonialChange();
   onGalleryImageClick();
+  reorderResponsiveMenu();
+  mobileMobileToggle();
 })();
